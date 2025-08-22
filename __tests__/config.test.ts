@@ -23,5 +23,5 @@ test('parse upload_to', () => {
 
 test('upload_to should raise exception if unknown scheme provided', () => {
   const t = () => loadConfig({"INPUT_UPLOAD-TO": "unknown://"});
-  expect(t).toThrowError("Invalid upload_to scheme: unknown://. Accepted, s3:// or github-release://");
+  expect(t).toThrow("Invalid upload_to scheme: unknown://. Accepted, s3:// or github-release://");
 });
