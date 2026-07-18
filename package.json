@@ -1,6 +1,6 @@
 {
   "name": "action-autobuild-release",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Publish autobuild artifacts",
   "main": "index.js",
   "scripts": {
@@ -25,9 +25,10 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "@actions/artifact": "^2.3.2",
-    "@actions/core": "^1.11.1",
-    "@aws-sdk/client-s3": "^3.1014.0",
+    "@actions/artifact": "^6.2.1",
+    "@actions/core": "^3.0.1",
+    "@actions/github": "^9.1.1"
+    "@aws-sdk/client-s3": "^3.1090.0",
     "mime": "^3.0.0"
   }
 }
